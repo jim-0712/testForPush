@@ -9,7 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  private enum AlertSheetType {
+    @IBOutlet weak var alert: UIButton!
+    
+    private enum AlertSheetType {
     case total
     case custom
     case minium
@@ -19,17 +21,18 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
-    let day = Date()
-    let a = day.get(.day, .month, .year)
-    if let year = a.year, let month = a.month, let day = a.day {
-      let changeMonth = String(format: "%02x", month)
-      let changeday = String(format: "%02x", day)
-      let dateFormatter = DateFormatter()
-      dateFormatter.dateFormat = "yyyy/MM/dd hh mm ss"
-      let dateString = "\(year)/\(changeMonth)/\(changeday) 23:59:59"
-      let dates = dateFormatter.date(from: dateString)
-      print("complete")
-    }
+//    let day = Date()
+//    let a = day.get(.day, .month, .year)
+//    if let year = a.year, let month = a.month, let day = a.day {
+//      let changeMonth = String(format: "%02x", month)
+//      let changeday = String(format: "%02x", day)
+//      let dateFormatter = DateFormatter()
+//      dateFormatter.dateFormat = "yyyy/MM/dd hh mm ss"
+//      let dateString = "\(year)/\(changeMonth)/\(changeday) 23:59:59"
+//      let dates = dateFormatter.date(from: dateString)
+//      print("complete")
+//    }
+//    alert.modifyShape(borderWidth: 1, borderColor: UIColor.green.cgColor, cornerRadius: 10, masksToBounds: false)
   }
   
   @IBAction func showAlert(_ sender: Any) {

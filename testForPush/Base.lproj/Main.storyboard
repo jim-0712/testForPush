@@ -31,6 +31,9 @@
                             <constraint firstItem="b31-3Z-sns" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c3k-E8-Fzp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alert" destination="b31-3Z-sns" id="aHb-4x-TZ5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
